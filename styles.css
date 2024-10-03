@@ -1,11 +1,5 @@
-div {
-  background-color: #000000;
-  color: #ff0000;
-  foreground-color: #ff0000;
-  width: 100px;
-  height: 100px;
-}
-
-h2 {
-  font-color: #00ff00;
+#portrait {
+  width: 600px;
+  height: 800px;
+  foreground-color: #888888;
 }
