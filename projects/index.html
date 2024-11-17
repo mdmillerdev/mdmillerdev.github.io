@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Latin Club Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <div>
+      <h1 id="title">Latin Club Form</h1>
+      <p id="description">Give us feedback to make next year better!</p>
+      <form id="survey-form">
+        <fieldset>
+          <legend>Tell us about yourself</legend>
+          <label id="name-label" for="name">Enter your name: <input required id="name" type="text" placeholder="Bob Joe"/></label>
+          <label id="email-label" for="email">Enter your email: <input required id="email" type="email" placeholder="bobjoe@gmail.com"/></label>
+          <label id="number-label" for="number">Enter your age: <input type="number" min=10 max=99 id="number" name="age" required placeholder="10-99"/></label>
+        </fieldset>
+        <fieldset>
+          <legend>Latin Club Events</legend>
+          <label for="dropdown">What was your favorite event this past year?
+          <select id="dropdown">
+            <option>(select one)</option>
+            <option>Water Balloon Fight</option>
+            <option>Fall Forum</option>
+            <option>Pumpkin Painting</option>
+            <option>Corn Maze</option>
+            <option>Latin Convention</option>
+          </select>
+        </label>
+        <label>What events did you dislike?</label>
+          <label for="water-balloon-fight"><input id="water-balloon-fight" type="checkbox" value="Water Balloon Fight"/>Water Balloon Fight</label>
+          <label for="fall-forum"><input id="fall-forum" type="checkbox" value="Fall Forum"/>Fall Forum</label>
+          <label for="pumpkin-painting"><input id="pumpkin-painting" type="checkbox" value="Pumpkin Painting"/>Pumpkin Painting</label>
+          <label for="corn-maze"><input id="corn-maze" type="checkbox" value="Corn Maze"/>Corn Maze</label>
+          <label for="latin convention"><input id="latin convention" type="checkbox" value="Latin Convention"/>Latin Convention</label>
+        </fieldset>
+        <fieldset>
+          <legend>Conclusion</legend>
+          <label>Was Latin Club better than last year?</label>
+          <label class="radio" for="better">Yes<input checked id="better" name="comparison" type="radio" value="Yes"></label>
+          <label class="radio" for="worse">No<input id="worse" name="comparison" type="radio" value="No"></label>
+          <label for="comments">Please enter any additional comments: <textarea id="comments"></textarea></label>
+        </fieldset>
+        <input id="submit" name="Submit" type="submit" value="Submit"/>
+      </form>
+    </div>
+  </body>
+</html>
