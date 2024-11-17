@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>HTML Documentation</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <main id="main-doc">
+      <nav id="navbar">
+        <header>HTML</header>
+        <a class="nav-link" href="#What_is_HTML?">What is HTML?</a>
+        <a class="nav-link" href="#Heading_Tags">Heading Tags</a>
+        <a class="nav-link" href="#Other_Basic_Tags">Other Basic Tags</a>
+        <a class="nav-link" href="#The_meta_Tag">The meta Tag</a>
+        <a class="nav-link" href="#The_anchor_Tag">The anchor Tag</a>
+      </nav>
+      <section id="What_is_HTML?" class="main-section">
+        <header>What is HTML?</header>
+        <p>HTML, or Hypertext Markup Language is a coding language primarily used to define the elements and the structure or heirarchy of a webpage.</p>
+        <div class="code">
+          <code>
+            <<span>section</span>><br/>
+            <div class="indent">
+              <<span>h1</span>>Heading 1<<span class="no-color">/</span><span>h1</span>><br/>
+              <<span>p</span>>Paragraph 1<<span class="no-color">/</span><span>p</span>>
+            </div>
+            <<span class="no-color">/</span><span>section</span>>
+          </code>
+        </div>
+        <p>As seen above, different HTML tags are used to define the elements that make up the webpage: <em>section, h1, and p.</em> Both the <em>h1</em> and the <em>p</em> are children of the <em>section</em> element. The <em>h1</em> element contains that text 'Heading 1' and the <em>p</em> element contains the text 'Paragraph 1'.</p>
+      </section>
+      <section id="Heading_Tags" class="main-section">
+        <header>Heading Tags</header>
+        <p>HTML 5 gives us 6 different heading tages by default: </p>
+        <ul>
+          <li><em>h1</em></li>
+          <li><em>h2</em></li>
+          <li><em>h3</em></li>
+          <li><em>h4</em></li>
+          <li><em>h5</em></li>
+          <li><em>h6</em></li>
+        </ul> 
+        <p>There should only be one <em>h1</em> tage per page; it is given the most importance. Following <em>h1</em>, <em>h2</em> and the rest of the heading tags in descending order prove sub-headings, sub-sub-headings, and so on.</p>
+        <div class="code">
+          <code>
+            <<span>header</span>>
+              <div class="indent">
+                <<span>h1</span>>Title<<span class="no-color">/</span><span>h1</span>>
+              </div>
+            <<span>header</span>><br/>
+            <<span>section</span>>
+              <div class="indent">
+                <<span>h2</span>>Sub-title<<span class="no-color">/</span><span>h2</span>><br/>
+                <<span>div</span>>
+                  <div class="indent">
+                    <<span>h3</span>>Sub-sub-title 1<<span class="no-color">/</span><span>h3</span>><br/>
+                    <<span>p</span>>Paragraph<<span class="no-color">/</span><span>p</span>>              
+                  </div>
+                <<span class="no-color">/</span><span>div</span>><br/>
+                <<span>div</span>>
+                  <div class="indent">
+                    <<span>h3</span>>Sub-sub-title 2<<span class="no-color">/</span><span>h3</span>><br/>
+                    <<span>p</span>>Paragraph<<span class="no-color">/</span><span>p</span>>              
+                  </div>
+                <<span class="no-color">/</span><span>div</span>><br/>
+                <<span>div</span>>
+                  <div class="indent">
+                    <<span>h3</span>>Sub-sub-title 3<<span class="no-color">/</span><span>h3</span>><br/>
+                    <<span>p</span>>Paragraph<<span class="no-color">/</span><span>p</span>>              
+                  </div>
+                <<span class="no-color">/</span><span>div</span>><br/>
+              </div>
+            <<span class="no-color">/</span><span>section</span>>
+          </code>
+        </div>
+        <p>As seen above, the heading tags are used in order of importance, with <em>h1</em> being the most important.</p>
+      </section>
+      <section id="Other_Basic_Tags" class="main-section">
+        <header>Other Basic Tags</header>
+        <p>Some other basic tags include <em>div</em>, <em>span</em>, <em>p</em>, <em>header</em>, and <em>section</em>. These are all tags that have been used so far in previous code exmaples in this guide.</p>
+        <div class="code">
+          <code>
+            <<span>header</span>><br/>
+            <div class="indent">
+              <<span>h1</span>>Example <<span>span</span>>Text<<span class="no-color">/</span><span>span</span>><<span class="no-color">/</span><span>h1</span>>
+            </div>
+            <<span class="no-color">/</span><span>header</span>><br/>
+            <<span>section</span>><br/>
+            <div class="indent">
+              <<span>h2</span>>Sub-title<<span class="no-color">/</span><span>h2</span>><br/>
+              <<span>div</span>><br/>
+              <div class="indent">
+                <<span>p</span>>Paragraph One<<span class="no-color">/</span><span>p</span>><br/>
+                <<span>p</span>>Paragraph Two<<span class="no-color">/</span><span>p</span>>
+              </div>
+              <<span class="no-color">/</span><span>div</span>>
+            </div>
+            <<span class="no-color">/</span><span>section</span>>
+          </code>
+        </div>
+        <p>As seen above, the <em>header</em> tag is used to define the section of the page that contains the <em>h1</em> and other important elements, such as a navigation.The <em>section</em> tag can be used multiple times, and is used to define sections of the page that differ in topic or purpose. The <em>div</em> element is used to define a container on the page for other elements, these <em>div</em> containers are usually 2 dimensional. The <em>span</em> element, in contrast is usualy used to define a 1 dimensional container. The <em>p</em> element is used to define text that is very low-level. Usually not the most important text, or just a paragraph description, as opposed to a heading or a title.</p>
+      </section>
+      <section id="The_meta_Tag" class="main-section">
+        <header>The meta Tag</header>
+        <p>The <em>meta</em> tag has many different uses. It is placed in the <em>head</em> tag, which is used to define informaiton about the webpage for the browser and search engine to use.</p>
+        <div class="code">
+          <code>
+            <<span>head</span>><br/>
+            <div class="indent">
+              <<span>meta</span> charset="utf-8"/><br/>
+              <<span>meta</span> name="viewport" content="width=device-width, initial-scale=1.0"/><br/>
+              <<span>meta</span> name="description" content="insert page description here"/>
+            </div>
+            <<span class="no-color">/</span><span>head</span>>
+          </code>
+        </div>
+        <p>As seen above, the attributes of the <em>meta</em> tage determine its function. The first <em>meta</em> tag defines the encryption for the page. The second <em>meta</em> tag defines the scaling of the page (to make it display correctly on all screen sizes). The last <em>meta</em> tag defines the description of the page.</p>
+      </section>
+      <section id="The_anchor_Tag" class="main-section">
+        <header>The anchor Tag</header>
+        <p>The anchor tag, better know as the <em>a</em> tag, creates a hyperlink in your webpage.</p>
+        <div class="code">
+          <code>
+            <<span>nav</span>><br/>
+            <div class="indent">
+              <<span>a</span> href="#section-1">Section 1<<span class="no-color">/</span><span>a</span>><br/>
+              <<span>a</span> href="#section-2">Section 2<<span class="no-color">/</span><span>a</span>>
+            </div>
+            <<span class="no-color">/</span><span>nav</span>><br/>
+            <<span>section</span> id="section-1"><br/>
+            <<span class="no-color">/</span><span>section</span>><br/>
+            <<span>section</span> id="section-2"><br/>
+            <<span class="no-color">/</span><span>section</span>><br/>
+          </code>
+        </div>
+        <p>As seen above, the <em>a</em> tag defines a hyperlink to sections 1 and 2, based off of the value of the <em>href</em> attribute. When the <em>href</em> attribute has a # in front of the value, it means that it links to another element in the page. They can also link to other webpages using the url of the other page.</p>
+      </section>
+    </main>
+  </body>
+</html>
