@@ -1,58 +1,70 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Michael Miller</title>
-    <link rel="stylesheet" href="styles.css"/>
-  </head>
-  <body>
-    <main>
-      <header>
-        <div id="identification">
-          <div id="logo"></div>
-          <h1>Michael Miller</h1>
-        </div>
-        <nav>
-          <ul>
-            <li>About</li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="certifications.html">Certifications<a/></li>
-            <li><a href="contacts.html">Contacts</a></li>
-          </ul>
-        </nav>
-      </header>
-      <section id="introduction">
-        <div id="welcome">
-          <div id="name" class="no-flex">
-            <h1>I'm Michael Miller</h1>
-            <p class="array">["Developer", "Designer"]</p>
-          </div>
-          <div id="portrait"><p>Insert Headshot Here</p></div>
-        </div>
-        <div id="description">
-          <p>I am a software developer, website developer, cybersecurity confidant, 3D modeler, pixel artist, game developer, and music composer.<br>I have learned many skils and bear a lot of knowledge, and what I don't know,</p>
-          <h3>I'll Learn</h3>
-        </div>
-      </section>
-      <section id="past-employments">
-        <h2>In the past, I've worked with:</h2>
-        <div class="grid">
-          <div class="item">
-            <img src="employers/thatssosweet.PNG"alt="Thats So Sweet"/>
-          </div>
-          <div class="item">
-            <img src="employers/indianhill.PNG"alt="Indian Hill High School"/>
-          </div>
-        </div>
-      </section>
-      <footer>
-        <div id="portrait"><p>Insert Headshot Here</p></div>
-        <ul id="contacts-list">
-          <li>>>> Email me at <a target="_blank" href="mailto:mdmillerdev@gmail.com">mdmillerdev@gmail.com</a></li>
-          <li>>>> Find me on Github <a target="_blank" href="https://github.com/mdmillerdev">@mdmillerdev</a></li>
-        </ul>
-      </footer>
-    </main>
-  </body>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Michael Miller - About</title>
+		<link rel="stylesheet" href="styles.css"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<main>
+			<header>
+				<div id="identification">
+					<div id="logo" class="home"></div>
+					<h1 id="title-name">Michael Miller</h1>
+				</div>
+				<nav>
+					<ul>
+						<li class="no-pointer"><div class="home nav-bar"></div><span class="nav-option">Home</span><div class="nav-spacer"></div></li>
+						<div class="nav-divider"></div>
+						<li><div class="portfolio nav-bar reactive"></div><a href="projects.html"><span class="nav-option">Projects</span></a><div class="nav-spacer"></div></li>
+						<div class="nav-divider"></div>
+						<li><div class="certifications nav-bar reactive"></div><a href="certifications.html"><span class="nav-option">Certifications</span></a><div class="nav-spacer"></div></li>
+						<div class="nav-divider"></div>
+						<li><div class="contacts nav-bar reactive"></div><a href="contacts.html"><span class="nav-option">Contacts</span></a><div class="nav-spacer"></div></li>
+					</ul>
+				</nav>
+			</header>
+			<section id="intro">
+				<div id="introduction-container">
+					<div id="introduction">
+						<h2>I'm Michael Miller</h2>
+						<p class="code-text">[<span class="string">"Developer"</span>, <span class="string">"Designer"</span>]</p>
+					</div>
+				</div>
+				<div id="portrait">As I have yet to aquire a professional headshot, there is no image of me here.</div>
+			</section>
+			<section id="description">
+				<p>I am an aspiring full-stack software developer, cybersecurity enthusiast and game developer. </p>
+			</section>
+			<section id="projects-preview">
+				<h2 id="pp-title">Some of my projects include</h2>
+				<div id="project-container">
+					<a target="_blank" href="projects/product-landing-page/view.html" class="project html css">
+						<img class="project-image" src="project-images/product-landing-page.png" alt="project-image"/>
+						<span class="project-title">Product Landing Page</span>
+					</a>
+					<a target="_blank" href="projects/roman-numeral-converter/view.html" class="project html css js">
+						<img class="project-image" src="project-images/roman-numeral-converter.png" alt="project-image"/>
+						<span class="project-title">Roman Numeral Converter</span>
+					</a>
+					<a target="_blank" href="projects/pokemon-search/view.html" class="project html css js">
+						<img class="project-image" src="project-images/pokemon-search.png" alt="project-image"/>
+						<span class="project-title">Pokémon Search</span>
+					</a>
+				</div>
+				<a id="projects-link" href="projects.html"><button id="see-more-projects">See More Projects</button></a>
+			</section>
+			<footer id="contacts-footer">
+				<h2>Contact Me</h2>
+				<ul id="contacts-list">
+					<li><a href="mailto:mdmillerdev@gmail.com" target="_blank"><img class="contact-image" src="mail.png" alt="mail logo"/><p class="contact">Email me at mdmillerdev@gmail.com</p></a></li>
+					<li><a href="https://github.com/mdmillerdev/" target="_blank"><img class="contact-image" src="github-logo.png" alt="github logo"/><p class="contact">Find me on Github</p></a></li>
+				</ul>
+			</footer>
+		</main>
+	</body>
 </html>
