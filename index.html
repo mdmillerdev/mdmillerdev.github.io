@@ -1,72 +1,73 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<title>Michael Miller - About</title>
+		<title>Michael D. Miller - About</title>
 		<meta name="google-site-verification" content="gHj8cNmYMLvOdTDyq_khUuzjOtoeqMjYqB_6uGhhZKg" />
 		<link rel="stylesheet" href="styles.css"/>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+		<link rel="icon" href="favicon-48x48.png"/>
 	</head>
 	<body>
+		<header>
+			<h1 id="title-name">Michael D. Miller</h1>
+			<nav>
+				<ul>
+					<li><a class="current home nav-option" href="index.html">About</a></li>
+					<li class="nav-divider"></li>
+					<li><a class="portfolio nav-option" href="projects.html">Projects</a></li>
+					<li class="nav-divider"></li>
+					<li><a class="certifications nav-option" href="certifications.html">Certifications</a></li>
+					<li class="nav-divider"></li>
+					<li><a class="contacts nav-option" href="contacts.html">Contacts</a></li>
+				</ul>
+			</nav>
+		</header>
 		<main>
-			<header>
-				<div id="identification">
-					<div id="logo" class="home"></div>
-					<h1 id="title-name">Michael Miller</h1>
-				</div>
-				<nav>
-					<ul>
-						<li class="no-pointer"><div class="home nav-bar"></div><span class="nav-option">Home</span><div class="nav-spacer"></div></li>
-						<div class="nav-divider"></div>
-						<li><div class="portfolio nav-bar reactive"></div><a href="projects.html"><span class="nav-option">Projects</span></a><div class="nav-spacer"></div></li>
-						<div class="nav-divider"></div>
-						<li><div class="certifications nav-bar reactive"></div><a href="certifications.html"><span class="nav-option">Certifications</span></a><div class="nav-spacer"></div></li>
-						<div class="nav-divider"></div>
-						<li><div class="contacts nav-bar reactive"></div><a href="contacts.html"><span class="nav-option">Contacts</span></a><div class="nav-spacer"></div></li>
-					</ul>
-				</nav>
-			</header>
 			<section id="intro">
-				<div id="introduction-container">
-					<div id="introduction">
-						<h2>I'm Michael Miller</h2>
-						<p class="code-text">[<span class="string">"Developer"</span>, <span class="string">"Designer"</span>]</p>
-					</div>
-				</div>
-				<img id="portrait" src="headshot.jpg" alt="Michael Miller smiling brightly, leaning to one side, and laughing" />
+				<img id="portrait" src="headshot.jpg" alt="Michael D. Miller smiling brightly, leaning to one side, and laughing" />
+				<p id="description">I am an aspiring full-stack software developer with a focus on React and Tailwind CSS.</p>
 			</section>
-			<section id="description">
-				<p>I am an aspiring full-stack software developer, cybersecurity enthusiast, and game developer. </p>
+			<section id="work-description">
+				<p>I design with front-end simplicity, prioritizing user experience and robust performance.</p>
 			</section>
 			<section id="projects-preview">
-				<h2 id="pp-title">Some of my projects include</h2>
-				<div id="project-container">
-					<a target="_blank" href="projects/product-landing-page/view.html" class="project html css">
-						<img class="project-image" src="project-images/product-landing-page.png" alt="project-image"/>
-						<span class="project-title">Product Landing Page</span>
-					</a>
-					<a target="_blank" href="projects/roman-numeral-converter/view.html" class="project html css js">
-						<img class="project-image" src="project-images/roman-numeral-converter.png" alt="project-image"/>
-						<span class="project-title">Roman Numeral Converter</span>
-					</a>
-					<a target="_blank" href="projects/pokemon-search/view.html" class="project html css js">
-						<img class="project-image" src="project-images/pokemon-search.png" alt="project-image"/>
-						<span class="project-title">Pokémon Search</span>
-					</a>
+				<div id="pp-container">
+					<div class="pp-section-container">
+						<p class="pp-section-title">In the past, I've worked on:</p>
+						<div class="pp-project-container">
+							<p class="pp-project-title">Braves Connect Hub Spreadsheet</p>
+							<img class="pp-project-image" src="project-images/connect-hub.png" alt="project-image"/>
+							<p class="pp-project-description">The Braves Connect Hub Spreadsheet is an innovative solution to a ticket system problem that includes a form to submit requests, a spreadsheet to manage the queue and maintain a history of requests, and a database to manage the hardware inventory.</p>
+						</div>
+						<a href="projects.html"><button id="see-all-projects">See All Projects</button></a>
+					</div>
+					<div class="pp-section-container">
+						<p class="pp-section-title">I am currently working on:</p>
+						<div class="pp-project-container">
+							<p class="pp-project-title">GEARS</p>
+							<img class="pp-project-image" src="project-images/gears-logo-320x320.png" alt="project-image"/>
+							<p class="pp-project-description">GEARS is a all-in-one self-improvement app that does the jobs of a planning/scheduling app, a fitness app, a self-help resources app, a habit tracker, and more.</p>
+						</div>
+						<a href="projects.html"><button id="see-all-projects">See All Projects</button></a>
+					</div>
 				</div>
-				<a id="projects-link" href="projects.html"><button id="see-more-projects">See More Projects</button></a>
+				
 			</section>
-			<footer id="contacts-footer">
-				<h2>Contact Me</h2>
-				<ul id="contacts-list">
-					<li><a href="mailto:mdmillerdev@gmail.com" target="_blank"><img class="contact-image" src="mail.png" alt="mail logo"/><p class="contact">Email me at mdmillerdev@gmail.com</p></a></li>
-					<li><a href="https://github.com/mdmillerdev/" target="_blank"><img class="contact-image" src="github-logo.png" alt="github logo"/><p class="contact">Find me on Github</p></a></li>
-				</ul>
-			</footer>
 		</main>
+		<footer id="contacts-footer">
+			<h2>Contact Me</h2>
+			<div id="contacts-and-logo-container">
+				<ul id="contacts-list">
+					<li><a href="mailto:mdmillerdev@gmail.com" target="_blank"><img class="contact-image" src="contact-logos/mail.png" alt="mail logo"/><p class="contact">Email me at mdmillerdev@gmail.com</p></a></li>
+					<li><a href="https://github.com/mdmillerdev/" target="_blank"><img class="contact-image" src="contact-logos/github-logo.png" alt="github logo"/><p class="contact">Find me on Github</p></a></li>
+				</ul>
+				<img src="favicon-128x128.png" alt="Logo depicting the initials MDM"/>
+			</div>
+		</footer>
 	</body>
 </html>

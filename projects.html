@@ -3,82 +3,72 @@
 	<head>
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<title>Michael Miller - Projects</title>
+		<title>Michael D. Miller - Projects</title>
+		<meta name="google-site-verification" content="gHj8cNmYMLvOdTDyq_khUuzjOtoeqMjYqB_6uGhhZKg" />
 		<link rel="stylesheet" href="styles.css"/>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+		<link rel="icon" href="favicon-48x48.png"/>
 	</head>
 	<body>
+		<header>
+			<div id="identification">
+				<div id="logo" class="portfolio"></div>
+				<h1 id="title-name">Michael D. Miller</h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a class="home nav-option" href="index.html">About</a></li>
+					<li class="nav-divider"></li>
+					<li><a class="current portfolio nav-option" href="projects.html">Projects</a></li>
+					<li class="nav-divider"></li>
+					<li><a class="certifications nav-option" href="certifications.html">Certifications</a></li>
+					<li class="nav-divider"></li>
+					<li><a class="contacts nav-option" href="contacts.html">Contacts</a></li>
+				</ul>
+			</nav>
+		</header>
 		<main>
-			<header>
-				<div id="identification">
-					<div id="logo" class="portfolio"></div>
-					<h1 id="title-name">Michael Miller</h1>
-				</div>
-				<nav>
-					<ul>
-						<li><div class="home nav-bar reactive"></div><a href="index.html"><span class="nav-option">Home</span></a><div class="nav-spacer"></div></li>
-						<div class="nav-divider"></div>
-						<li class="no-pointer"><div class="portfolio nav-bar"></div><span class="nav-option">Projects</span><div class="nav-spacer"></div></li>
-						<div class="nav-divider"></div>
-						<li><div class="certifications nav-bar reactive"></div><a href="certifications.html"><span class="nav-option">Certifications</span></a><div class="nav-spacer"></div></li>
-						<div class="nav-divider"></div>
-						<li><div class="contacts nav-bar reactive"></div><a href="contacts.html"><span class="nav-option">Contacts</span></a><div class="nav-spacer"></div></li>
-					</ul>
-				</nav>
-			</header>
-			<section id="filters">
-				<h2>Filters</h2>
-				<div id="filter-container">
-					<button class="filter html">HTML</button>
-					<button class="filter css">CSS</button>
-					<button class="filter js">JavaScript</button>
-				</div>
-			</section>
 			<section id="projects">
-				<h2>Results</h2>
-				<div id="project-container">
-					<a target="_blank" href="projects/connect-hub/view.html" class="project js as">
-						<img class="project-image" src="project-images/connect-hub.png" alt="project-image"/>
-						<span class="project-title">Connect Hub Spreadsheet</span>
-					</a>
-					<a target="_blank" href="projects/survey-form/view.html" class="project html css">
-						<img class="project-image" src="project-images/survey-form.png" alt="project-image"/>
-						<span class="project-title">Survey Form</span>
-					</a>
-					<a target="_blank" href="projects/tribute-page/view.html" class="project html css">
-						<img class="project-image" src="project-images/tribute-page.png" alt="project-image"/>
-						<span class="project-title">Tribute Page</span>
-					</a>
-					<a target="_blank" href="projects/documentation-page/view.html" class="project html css">
-						<img class="project-image" src="project-images/documentation-page.png" alt="project-image"/>
-						<span class="project-title">Documentation Page</span>
-					</a>
-					<a target="_blank" href="projects/product-landing-page/view.html" class="project html css">
-						<img class="project-image" src="project-images/product-landing-page.png" alt="project-image"/>
-						<span class="project-title">Product Landing Page</span>
-					</a>
-					<a target="_blank" href="projects/palindrome-checker/view.html" class="project html css js">
-						<img class="project-image" src="project-images/palindrome-checker.png" alt="project-image"/>
-						<span class="project-title">Palindrome Checker</span>
-					</a>
-					<a target="_blank" href="projects/roman-numeral-converter/view.html" class="project html css js">
-						<img class="project-image" src="project-images/roman-numeral-converter.png" alt="project-image"/>
-						<span class="project-title">Roman Numeral Converter</span>
-					</a>
-					<a target="_blank" href="projects/phone-number-validator/view.html" class="project html css js">
-						<img class="project-image" src="project-images/phone-number-validator.png" alt="project-image"/>
-						<span class="project-title">Phone Number validator</span>
-					</a>
-					<a target="_blank" href="projects/pokemon-search/view.html" class="project html css js">
-						<img class="project-image" src="project-images/pokemon-search.png" alt="project-image"/>
-						<span class="project-title">Pokémon Search</span>
-					</a>
+				<h2>Projects</h2>
+				<div id="projects-container">
+					<hr class="project-divider"></hr>
+					<div class="project">
+						<img class="project-image" src="project-images/connect-hub.png"/>
+						<div class="project-text-container">
+							<p class="project-title">Braves Connect Hub Spreadsheet</p>
+							<p class="project-description">The Indian Hill High School Tech Department needed an IT request system for student and teacher use. Using Google AppScript and Google Sheets, I created a solution that included a form to submit requests, a spreadsheet to manage the queue and maintain a history of requests, a database to manage the hardware inventory, and appropriately limited access for the student and teacher volunteers staffing the fulfillment desk. Current inventory is shown on the form and updates upon request fulfillment, enabling users to know prior to submitting a request whether or not it can be fulfilled. When a student borrows hardware and it isn't returned during the day, fulfillment staff can see the location of the student's final class of the day to retrieve the loaned item. The new IT Request System has enabled the Tech Department to quickly and easily track their inventory, enabled students and teachers to rapidly request loaner equipment during the school day, and has given other students real-life work experience staffing the desk during their free period.</p>
+						</div>
+					</div>
+					<hr class="project-divider"></hr>
+					<div class="project reverse">
+						<img class="project-image" src="project-images/gears-logo-320x320.png"/>
+						<div class="project-text-container">
+							<p class="project-title">GEARS</p>
+							<p class="project-description">GEARS, a work-in-progress, is designed using TypeScript and React Native to be an all-in-one self-improvement app that does the jobs of a planning/scheduling app, a fitness app, a self-help resources app, a habit tracker, and more. The application is based off of the fact that our lives as humans can't really be strictly planned out day by day, hour by hour, rather we live our lives in a more fluid fashion, where we plan in our heads to complete certain tasks by certain points, even if that point is as abstract as "sometime later today". This is demonstrated by the app's "switch gears" feature, where during a certain "gear", the user has a list of things they plan to do, instead of planning when exactly to do each and every thing. GEARS will be available on the app store and google play for mobile, and eventually for other platforms as well.</p>
+						</div>
+					</div>
+					<hr class="project-divider"></hr>
+					<div class="project">
+						<div class="project-text-container">
+							<p class="project-title">And lastly, this website</p>
+							<p class="project-description">I created this website to showcase my portfolio and skills. Hosted on Github Pages, it is comprised of just static HTML and CSS.</p>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>
+		<footer id="contacts-footer">
+			<h2>Contact Me</h2>
+			<div id="contacts-and-logo-container">
+				<ul id="contacts-list">
+					<li><a href="mailto:mdmillerdev@gmail.com" target="_blank"><img class="contact-image" src="contact-logos/mail.png" alt="mail logo"/><p class="contact">Email me at mdmillerdev@gmail.com</p></a></li>
+					<li><a href="https://github.com/mdmillerdev/" target="_blank"><img class="contact-image" src="contact-logos/github-logo.png" alt="github logo"/><p class="contact">Find me on Github</p></a></li>
+				</ul>
+				<img src="favicon-128x128.png" alt="Logo depicting the initials MDM"/>
+			</div>
+		</footer>
 	</body>
 </html>
-<script src="script.js"></script>
