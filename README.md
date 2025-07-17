@@ -1,4 +1,4 @@
-# Hello! I am Michael Miller
+# Hello! I am Michael D. Miller
 
 This is the repository I use to hold the code for my personal website and subsequently host it using Github Pages.
 
